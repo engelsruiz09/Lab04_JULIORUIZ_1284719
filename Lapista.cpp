@@ -26,30 +26,7 @@ void Lapista::imprimirpista(int p, int p2) {
 	changepostortoise(p2);
 }
 
-void Lapista::changeposhare(int p) {
-	if ((1 < p || p == 1) && (p < 5 || p == 5)) {
-		vechare[positionhare - 1] = 0;
-		positionhare += 3;
-		vechare[positionhare - 1] = 1;
-	}
-	else if ((6 < p || p == 6) && (p < 7 || p == 7)) {
-		if (positionhare - 6 > 0) {
-			vechare[positionhare - 1] = 0;
-			positionhare -= 6;
-			vechare[positionhare - 1] = 1;
-		}
-		else {
-			vechare[positionhare - 1] = 0;
-			positionhare = 1;
-			vechare[positionhare - 1] = 1;
-		}
-	}
-	else if ((8 < p || p == 8) && (p < 10 || p == 10)) {
-		vechare[positionhare - 1] = 0;
-		positionhare += 1;
-		vechare[positionhare - 1] = 1;
-	}
-}
+
 void Lapista::changepostortoise(int p) {
 	if ((3 < p || p == 3) && (p < 4 || p == 4)) {
 		if (positiontortoise + 9 < 70) {
